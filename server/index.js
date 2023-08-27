@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 const { Sequelize } = require("sequelize");
+const houseRoutes = require("./routes/house");
 
 dotenv.config();
 const app = express();
@@ -24,6 +25,8 @@ const connectToPostgres = async () => {
 };
 connectToPostgres();
 module.exports = { sequelize };
+
+app.use("/api", houseRoutes);
 
 //Init db table
 /*const house = require("./models/House");
