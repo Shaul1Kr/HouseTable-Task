@@ -1,7 +1,14 @@
-const createHouse = (req, res) => {
+const House = require("../models/House");
+
+const createHouse = async (req, res) => {
   try {
     console.log(req.body);
-    res.status(201).json("Ok");
+    const { address, curVal } = req.body;
+    const newHouse = await House.create({
+      address: address,
+      currentValue: curVal,
+    });
+    res.status(201).json(newHouse.id);
   } catch (error) {
     res.status(409).json({ message: err.message });
   }
