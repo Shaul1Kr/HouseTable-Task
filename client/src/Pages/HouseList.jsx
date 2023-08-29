@@ -16,25 +16,29 @@ export default function HouseList() {
   return (
     <StyledDiv>
       <table>
-        <tr>
-          <th>ID</th>
-          <th>Address</th>
-          <th>Current Value</th>
-          <th>Loan Amount</th>
-          <th>Risk</th>
-          <th></th>
-        </tr>
-        {houses.map((house) => (
-          <tr key={house.id}>
-            <td>{house.id}</td>
-            <td>{house.address}</td>
-            <td>{house.currentValue}</td>
-            <td>{house.loanAmount}</td>
-            <td>{house.risk}</td>
-            <td>
-              <StyledButton to={String(house.id)}>Edit</StyledButton>
-            </td>
+        <tbody>
+          <tr>
+            <th>ID</th>
+            <th>Address</th>
+            <th>Current Value</th>
+            <th>Loan Amount</th>
+            <th>Risk</th>
+            <th></th>
           </tr>
+        </tbody>
+        {houses.map((house) => (
+          <tbody key={house.id}>
+            <tr>
+              <td>{house.id}</td>
+              <td>{house.address}</td>
+              <td>{house.currentValue}</td>
+              <td>{house.loanAmount}</td>
+              <td>{house.risk}</td>
+              <td>
+                <StyledButton to={String(house.id)}>Edit</StyledButton>
+              </td>
+            </tr>
+          </tbody>
         ))}
       </table>
     </StyledDiv>
