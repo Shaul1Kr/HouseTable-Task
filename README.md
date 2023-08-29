@@ -15,7 +15,7 @@ Follow these instructions to set up and run the HomeRisk Calculator application 
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/homerisk-calculator.git
+   git clone https://github.com/Shaul1Kr/HouseTable-Task.git
    cd homerisk-calculator
    ```
 
