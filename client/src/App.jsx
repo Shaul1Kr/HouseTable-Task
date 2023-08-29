@@ -1,19 +1,26 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HouseSubmittion from "./Pages/HouseSubmittion";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AddNewHouse from "./Pages/AddNewHouse";
+import HouseList, { loader as HouseListLoader } from "./Pages/HouseList";
+import EditHouse, { loader as HouseDetailLoader } from "./Pages/EditHouse";
 import "./App.css";
-import HouseDetail from "./Pages/HouseDetail";
+import Layout from "./Layouts/Layout";
 
-const App = () => {
-  return (
-    <div className="app">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HouseSubmittion />} />
-          <Route path="/house/:id" element={<HouseDetail />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
-};
+export default function App() {
+  return <RouterProvider router={router} />;
+}
 
-export default App;
+const router = createBrowserRouter([
+  {
+    path: "",
+    element: <Layout />,
+    children: [
+      { path: "", element: <AddNewHouse /> },
+      {
+        path: "/house/:id",
+        loader: HouseDetailLoader,
+        element: <EditHouse />,
+      },
+      { path: "/house", loader: HouseListLoader, element: <HouseList /> },
+    ],
+  },
+]);
