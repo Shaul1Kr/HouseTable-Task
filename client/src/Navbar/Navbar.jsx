@@ -12,12 +12,14 @@ export default function Navbar() {
     </Nav>
   );
 }
+const Nav = styled.nav`
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 1px 1px 2px 1px rgba(39, 39, 51, 0.04);
+  padding: 1% 0;
+`;
 
 const StyleNavLink = styled(Link)`
   color: #93795d;
-`;
-
-const Nav = styled.nav`
-  display: flex;
-  justify-content: space-between;
 `;

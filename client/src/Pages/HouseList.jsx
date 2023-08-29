@@ -32,7 +32,7 @@ export default function HouseList() {
             <td>{house.loanAmount}</td>
             <td>{house.risk}</td>
             <td>
-              <Link to={String(house.id)}>Edit</Link>
+              <StyledButton to={String(house.id)}>Edit</StyledButton>
             </td>
           </tr>
         ))}
@@ -43,4 +43,14 @@ export default function HouseList() {
 
 const StyledDiv = styled.div`
   display: grid;
+  margin: 2rem;
+`;
+
+const StyledButton = styled(Link)`
+  display: block;
+  background-color: #93795d;
+  border: 1px solid #93795d;
+  color: #fff7ed;
+  border-radius: 40px;
+  font-weight: 700;
 `;

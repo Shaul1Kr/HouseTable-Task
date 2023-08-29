@@ -13,11 +13,11 @@ export default function Layout() {
 
 const StyledContainer = styled.div`
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   min-height: 100dvh;
   width: 100vw;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  background-color: #fff7ed;
 `;
