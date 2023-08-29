@@ -15,7 +15,7 @@ Follow these instructions to set up and run the HomeRisk Calculator application 
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/homerisk-calculator.git
+   git clone https://github.com/Shaul1Kr/HouseTable-Task.git
    cd homerisk-calculator
    ```
 
@@ -35,7 +35,6 @@ Follow these instructions to set up and run the HomeRisk Calculator application 
 
 4. **Database Setup:**
 
-   - Install PostgreSQL and create a database.
    - In the `server` directory, copy the `.env.example` file to `.env` and set your database credentials:
 
      ```
@@ -66,13 +65,12 @@ Follow these instructions to set up and run the HomeRisk Calculator application 
 
    ```bash
    cd client
-   npm install # Only run this command once
    npm run dev
    ```
 
 7. **Access the Application:**
 
-   Open your web browser and visit: `http://localhost:3000`
+   Open your web browser and visit: `http://localhost:5173`
 
 8. **Usage:**
 
@@ -88,17 +86,3 @@ Follow these instructions to set up and run the HomeRisk Calculator application 
 - Sequelize ORM
 - PostgreSQL
 - HTML, CSS, JavaScript
-
-## Contributing
-
-Contributions are welcome! If you'd like to enhance the HomeRisk Calculator, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature: `git checkout -b feature-name`.
-3. Commit your changes: `git commit -m "Add feature"`.
-4. Push the branch: `git push origin feature-name`.
-5. Create a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
