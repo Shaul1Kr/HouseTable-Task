@@ -23,6 +23,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  font-family: sans-serif;
 }
 
 h1 {
