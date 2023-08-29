@@ -7,9 +7,11 @@ const sequelize = new Sequelize(DATABASE, USER, PASSWORD, {
   dialect: DIALECT,
 });
 
+//Init the db table and hooks
 House.init(sequelize);
 House.hooks(sequelize);
 
+//Chacking the sequilize connaction
 sequelize
   .authenticate()
   .then(() => {
