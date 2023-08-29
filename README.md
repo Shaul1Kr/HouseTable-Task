@@ -86,3 +86,12 @@ Follow these instructions to set up and run the HomeRisk Calculator application 
 - Sequelize ORM
 - PostgreSQL
 - HTML, CSS, JavaScript
+
+## Screen Shots![1](https://github.com/Shaul1Kr/HouseTable-Task/assets/57437693/36e75af0-cee0-4dcf-ba36-bd9161e46cf8)
+![2](https://github.com/Shaul1Kr/HouseTable-Task/assets/57437693/fd03790b-3d02-4cd8-bfd6-685383646a96)
+![3](https://github.com/Shaul1Kr/HouseTable-Task/assets/57437693/fe32c093-dc92-41ab-b7a0-886a37328758)
+![4](https://github.com/Shaul1Kr/HouseTable-Task/assets/57437693/2aaeebad-a290-4b1e-b75c-c18160c206e9)
+![5](https://github.com/Shaul1Kr/HouseTable-Task/assets/57437693/42159d84-456f-45e5-bb81-6b6173ff564f)
+![6](https://github.com/Shaul1Kr/HouseTable-Task/assets/57437693/3fa086ca-456e-413d-b65e-225f9086e93c)
+
+
